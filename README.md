@@ -8,7 +8,11 @@ Different architectures can be found in:
 
 1. ConvolutionalAE1.py 
 2. ConvolutionalAE2.py 
-3. ConvolutionalAE3.py :
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE2%20-%20reconstruction.png)
+
+
+4. ConvolutionalAE3.py :
 For this part I tried 4 different sizes of the code layer, and the results are shown:
 
 100x1
