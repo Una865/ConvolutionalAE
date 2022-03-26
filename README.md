@@ -12,3 +12,21 @@ Different architectures can be found in:
 For this part I tried 4 different sizes of the code layer, and the results are shown:
 
 100x1
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE3%20100x1.png)
+
+300x1
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE3%20300x1.png)
+
+600x1
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE3%20600x1.png)
+
+1000x1
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE3%201000x1.png)
+
+2000x1
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE3%20%202000x1.png)
