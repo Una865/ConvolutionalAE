@@ -7,6 +7,10 @@ The goal of this project is to find optimal image compression that could later b
 Different architectures can be found in:
 
 1. ConvolutionalAE1.py 
+
+![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/AE1-reconstructed.png)
+
+
 2. ConvolutionalAE2.py 
 
 ![alt_text](https://github.com/Una865/ConvolutionalAE/blob/main/Images/ConvolutionalAE2%20-%20reconstruction.png)
