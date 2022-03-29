@@ -21,21 +21,21 @@ from sklearn.model_selection import train_test_split
 
 def encoder(input_img):
 
-    conv1 = Conv2D(32, (3, 3), activation='relu', padding='same')(input_img) #28 x 28 x 32
+    conv1 = Conv2D(32, (3, 3), activation='relu', padding='same')(input_img) 
     conv1 = BatchNormalization()(conv1)
     conv1 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv1)
     conv1 = BatchNormalization()(conv1)
-    pool1 = MaxPooling2D(pool_size=(2, 2))(conv1) #14 x 14 x 32
-    conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool1) #14 x 14 x 64
+    pool1 = MaxPooling2D(pool_size=(2, 2))(conv1)
+    conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool1) 
     conv2 = BatchNormalization()(conv2)
     conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv2)
     conv2 = BatchNormalization()(conv2)
-    pool2 = MaxPooling2D(pool_size=(2, 2))(conv2) #7 x 7 x 64
-    conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(pool2) #7 x 7 x 128 (small and thick)
+    pool2 = MaxPooling2D(pool_size=(2, 2))(conv2)
+    conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(pool2) 
     conv3 = BatchNormalization()(conv3)
     conv3 = Conv2D(128, (3, 3), activation='relu', padding='same')(conv3)
     conv3 = BatchNormalization()(conv3)
-    conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv3) #7 x 7 x 256 (small and thick)
+    conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv3) 
     conv4 = BatchNormalization()(conv4)
     conv4 = Conv2D(256, (3, 3), activation='relu', padding='same')(conv4)
     conv4 = BatchNormalization()(conv4)
@@ -51,7 +51,7 @@ def decoder(conv4):
     conv6 = BatchNormalization()(conv6)
     conv6 = Conv2D(64, (3, 3), activation='relu', padding='same')(conv6)
     conv6 =BatchNormalization()(conv6)
-    up1 = UpSampling2D((2,2))(conv6) #14 x 14 x 64
+    up1 = UpSampling2D((2,2))(conv6) 
     conv7 = Conv2D(32, (3, 3), activation='relu', padding='same')(up1)
     conv7 = BatchNormalization()(conv7)
     conv7 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv7)
